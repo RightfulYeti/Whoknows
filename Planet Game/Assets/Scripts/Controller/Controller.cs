@@ -8,6 +8,7 @@ public class Controller : MonoBehaviour
     RaycastHit Hit;
     public PlanetsInfo PlanetInfoRef;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,8 +32,22 @@ public class Controller : MonoBehaviour
                 }
             }
         }
+        if (Input.GetMouseButton(0))
+        {
+            Ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(Ray, out Hit))
+            {
+                if (Hit.transform.tag == "Resource")
+                {
+                    print("Holding button on Resource! ");
+                }
+                else
+                {
+                }
+            }
+        }
 
-   
+
     }
 
 }

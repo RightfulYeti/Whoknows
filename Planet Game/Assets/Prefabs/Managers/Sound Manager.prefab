@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3462563019336938325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3462563019336938327}
+  - component: {fileID: 3462563019336938326}
+  m_Layer: 0
+  m_Name: Sound Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3462563019336938327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3462563019336938325}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.09306145, y: -8.818682, z: 2.65625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3462563019336938326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3462563019336938325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70197e234a0771047be109a635e5f48e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Idle_loop
+    clip: {fileID: 8300000, guid: 458b3a43977bb16499fbb4a09c980a16, type: 3}
+    GeneralAudioSettings:
+      volume: 0.27
+      pitch: 1
+      VolumeRandomness: 0
+      PitchRandomness: 0
+      StereoPan: 0
+      Mute: 0
+      Loop: 1
+      output: {fileID: 3826968607426145036, guid: 9f0bf89fa6923f643b104c242437a11b,
+        type: 2}
+    RollOffSettings:
+      RollOffMode: 0
+      MinCeaseDistance: 0
+      MaxDistance: 0
+  - name: BootlinVoice
+    clip: {fileID: 8300000, guid: e4fb9f9d70d639f44b03113ca30168ac, type: 3}
+    GeneralAudioSettings:
+      volume: 0.27
+      pitch: 1.2
+      VolumeRandomness: 0
+      PitchRandomness: 0
+      StereoPan: 0
+      Mute: 0
+      Loop: 1
+      output: {fileID: -2814560198143891665, guid: 9f0bf89fa6923f643b104c242437a11b,
+        type: 2}
+    RollOffSettings:
+      RollOffMode: 0
+      MinCeaseDistance: 0
+      MaxDistance: 0
+  - name: Footsteps
+    clip: {fileID: 8300000, guid: 4b7596a7515e60f4098f39371c6a15ef, type: 3}
+    GeneralAudioSettings:
+      volume: 0.1
+      pitch: 1
+      VolumeRandomness: 0.1
+      PitchRandomness: 0.13
+      StereoPan: 0
+      Mute: 0
+      Loop: 0
+      output: {fileID: 4520785717314078766, guid: 9f0bf89fa6923f643b104c242437a11b,
+        type: 2}
+    RollOffSettings:
+      RollOffMode: 0
+      MinCeaseDistance: 0
+      MaxDistance: 0
+  - name: BrewheartVoice
+    clip: {fileID: 8300000, guid: a84b176e34396b642b6d70f80e2adc20, type: 3}
+    GeneralAudioSettings:
+      volume: 0.27
+      pitch: 0.9
+      VolumeRandomness: 0.1
+      PitchRandomness: 0.025
+      StereoPan: 0
+      Mute: 0
+      Loop: 1
+      output: {fileID: -2814560198143891665, guid: 9f0bf89fa6923f643b104c242437a11b,
+        type: 2}
+    RollOffSettings:
+      RollOffMode: 0
+      MinCeaseDistance: 0
+      MaxDistance: 0
+  - name: AtlasVoice
+    clip: {fileID: 8300000, guid: a84b176e34396b642b6d70f80e2adc20, type: 3}
+    GeneralAudioSettings:
+      volume: 0.27
+      pitch: 0.8
+      VolumeRandomness: 0.1
+      PitchRandomness: 0.025
+      StereoPan: 0
+      Mute: 0
+      Loop: 1
+      output: {fileID: -2814560198143891665, guid: 9f0bf89fa6923f643b104c242437a11b,
+        type: 2}
+    RollOffSettings:
+      RollOffMode: 0
+      MinCeaseDistance: 0
+      MaxDistance: 0

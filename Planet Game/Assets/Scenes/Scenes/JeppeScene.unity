@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 125088244}
   m_Layer: 0
   m_Name: Water Bar
-  m_TagString: Untagged
+  m_TagString: Water Bar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1607,7 +1607,7 @@ GameObject:
   - component: {fileID: 1464474060}
   m_Layer: 0
   m_Name: Food Bar
-  m_TagString: Untagged
+  m_TagString: Food Bar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2081,7 +2081,7 @@ GameObject:
   - component: {fileID: 2096279623}
   m_Layer: 0
   m_Name: Money Bar
-  m_TagString: Untagged
+  m_TagString: Money Bar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

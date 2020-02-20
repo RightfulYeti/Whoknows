@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Planet
   - Resource
+  - Money Bar
+  - Water Bar
+  - Food Bar
   layers:
   - Default
   - TransparentFX

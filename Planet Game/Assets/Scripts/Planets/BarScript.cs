@@ -23,13 +23,13 @@ public class BarScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        WaterLocalScale.x = Planet.Water;
+        WaterLocalScale.x = Planet.Water / 20;
         Water.transform.localScale = WaterLocalScale;
 
-        FoodLocalScale.x = Planet.Food;
+        FoodLocalScale.x = Planet.Food / 20;
         Food.transform.localScale = FoodLocalScale;
 
-        MoneyLocalScale.x = Planet.Money;
+        MoneyLocalScale.x = Planet.Money / 20;
         Money.transform.localScale = MoneyLocalScale;
     }
 }

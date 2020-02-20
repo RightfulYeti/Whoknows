@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlanetsInfo : MonoBehaviour
 {
-    public GameObject[] Planets;
+    public Planet[] Planets;
 
     // Start is called before the first frame update
     void Start()
@@ -18,14 +18,16 @@ public class PlanetsInfo : MonoBehaviour
         
     }
 
-    public void PlanetFinder(string planetname)
+    public string PlanetFinder(string planetname)
     {
         for (int i = 0; i < Planets.Length; i++)
         {
+            print(Planets[i].name);
             if (Planets[i].name == planetname)
             {
-                print("You clicked planet " + i + "!");
+                return Planets[i].name;
             }
         }
+        return null;
     }
 }

@@ -124,8 +124,6 @@ public class SoundManager : MonoBehaviour
             go.transform.SetParent(this.transform);
             sounds[i].SetSource(go.AddComponent<AudioSource>());
         }
-
-        PlaySound("Idle_loop");
     }
 
     public void PlaySound(string _name)

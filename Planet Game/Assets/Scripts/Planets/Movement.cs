@@ -1,25 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
     public float Speed;
     public float SpeedFactor;
-    private Rigidbody RigidbodyRef;
-    GameObject StartingPoint;
-    GameObject NewTarget;
+    private float Timer = 0.0f;
     bool Collided = false;
     private int CurrentTarget;
+    GameObject StartingPoint;
+    GameObject NewTarget;
+    GameManager GameManagerRef;
+    private Rigidbody RigidbodyRef;
     public List<Transform> Target;
 
-    private float Timer = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
         RigidbodyRef = gameObject.GetComponent<Rigidbody>();
         StartingPoint = new GameObject();
         StartingPoint.transform.position = gameObject.transform.position;
+        GameManagerRef = FindObjectOfType<GameManager>();
         StartCoroutine(Waiter());
     }
 
@@ -60,7 +63,6 @@ public class Movement : MonoBehaviour
             }
             else if (transform.position == Target[CurrentTarget].position && CurrentTarget == Target.Count - 1)
             {
-                print("poasd");
                 CurrentTarget = 0;
             }
             else
@@ -83,6 +85,8 @@ public class Movement : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Collided = true;
+        FindObjectOfType<Countdown>().Counting = true;
+        FindObjectOfType<Countdown>().GetComponent<Text>().enabled = true;
         gameObject.GetComponent<SphereCollider>().enabled = false;
         gameObject.GetComponent<TrailRenderer>().enabled = false;
     }

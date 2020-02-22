@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Idle_loop
+  - name: 
     clip: {fileID: 8300000, guid: 458b3a43977bb16499fbb4a09c980a16, type: 3}
     GeneralAudioSettings:
       volume: 0.27
@@ -54,8 +54,7 @@ MonoBehaviour:
       StereoPan: 0
       Mute: 0
       Loop: 1
-      output: {fileID: 3826968607426145036, guid: 9f0bf89fa6923f643b104c242437a11b,
-        type: 2}
+      output: {fileID: 0}
     RollOffSettings:
       RollOffMode: 0
       MinCeaseDistance: 0
@@ -70,8 +69,7 @@ MonoBehaviour:
       StereoPan: 0
       Mute: 0
       Loop: 1
-      output: {fileID: -2814560198143891665, guid: 9f0bf89fa6923f643b104c242437a11b,
-        type: 2}
+      output: {fileID: 0}
     RollOffSettings:
       RollOffMode: 0
       MinCeaseDistance: 0
@@ -86,8 +84,7 @@ MonoBehaviour:
       StereoPan: 0
       Mute: 0
       Loop: 0
-      output: {fileID: 4520785717314078766, guid: 9f0bf89fa6923f643b104c242437a11b,
-        type: 2}
+      output: {fileID: 0}
     RollOffSettings:
       RollOffMode: 0
       MinCeaseDistance: 0
@@ -102,8 +99,7 @@ MonoBehaviour:
       StereoPan: 0
       Mute: 0
       Loop: 1
-      output: {fileID: -2814560198143891665, guid: 9f0bf89fa6923f643b104c242437a11b,
-        type: 2}
+      output: {fileID: 0}
     RollOffSettings:
       RollOffMode: 0
       MinCeaseDistance: 0
@@ -118,8 +114,7 @@ MonoBehaviour:
       StereoPan: 0
       Mute: 0
       Loop: 1
-      output: {fileID: -2814560198143891665, guid: 9f0bf89fa6923f643b104c242437a11b,
-        type: 2}
+      output: {fileID: 0}
     RollOffSettings:
       RollOffMode: 0
       MinCeaseDistance: 0

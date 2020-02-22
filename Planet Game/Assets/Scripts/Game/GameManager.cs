@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -19,6 +20,11 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(Planet, new Vector3(Random.Range(-100, 100), -50, 50), Planet.transform.rotation);
             NewPlanet = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Menu");
         }
     }
 }

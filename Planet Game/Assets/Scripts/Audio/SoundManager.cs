@@ -106,6 +106,7 @@ public class SoundManager : MonoBehaviour
 
     void Awake()
     {
+        DontDestroyOnLoad(transform.gameObject);
         if (instance != null)
         {
             Debug.LogError("More than one SoundManager in the scene");

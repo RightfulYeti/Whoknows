@@ -125,6 +125,7 @@ public class SoundManager : MonoBehaviour
             go.transform.SetParent(this.transform);
             sounds[i].SetSource(go.AddComponent<AudioSource>());
         }
+        PlaySound("Music");
     }
 
     public void PlaySound(string _name)

@@ -45,9 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Music
-    clip: {fileID: 8300000, guid: a1112f475992efb4183b37aa8063bedf, type: 3}
+    clip: {fileID: 8300000, guid: 86537659f6d1a26409b5a90de8802ce4, type: 3}
     GeneralAudioSettings:
-      volume: 0.1
+      volume: 0.2
       pitch: 1
       VolumeRandomness: 0
       PitchRandomness: 0

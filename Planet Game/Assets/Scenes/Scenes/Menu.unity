@@ -265,6 +265,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sound Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3462563019336938326, guid: 23d2dd57e6294204da989a9dc5a1f444,
+        type: 3}
+      propertyPath: sounds.Array.data[0].GeneralAudioSettings.PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462563019336938326, guid: 23d2dd57e6294204da989a9dc5a1f444,
+        type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a1112f475992efb4183b37aa8063bedf, type: 3}
+    - target: {fileID: 3462563019336938326, guid: 23d2dd57e6294204da989a9dc5a1f444,
+        type: 3}
+      propertyPath: sounds.Array.data[0].GeneralAudioSettings.output
+      value: 
+      objectReference: {fileID: 1893686210055562657, guid: a822d4a9bec663a488c9c8f77b7c3fdb,
+        type: 2}
     - target: {fileID: 3462563019336938327, guid: 23d2dd57e6294204da989a9dc5a1f444,
         type: 3}
       propertyPath: m_LocalPosition.x

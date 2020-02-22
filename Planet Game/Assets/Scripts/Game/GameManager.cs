@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene("Menu");
+            FindObjectOfType<SoundManager>().StopSound("Music");
         }
     }
 }

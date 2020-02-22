@@ -9,7 +9,6 @@ public class MenuController : MonoBehaviour
     public SoundManager SoundManagerRef;
     private void Start()
     {
-        SoundManagerRef.PlaySound("Music");
     }
     public void BeginMainScene()
     {

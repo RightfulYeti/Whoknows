@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     {   
         if (NewPlanet)
         {
-            Instantiate(Planet, Planet.transform.position, Planet.transform.rotation);
+            Instantiate(Planet, new Vector3(Random.Range(-100, 100), -50, 50), Planet.transform.rotation);
             NewPlanet = false;
         }
     }

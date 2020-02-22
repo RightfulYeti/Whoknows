@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     GameObject StartingPoint;
     GameObject NewTarget;
     GameManager GameManagerRef;
+    SoundManager SoundManagerRef;
     private Rigidbody RigidbodyRef;
     public List<Transform> Target;
 
@@ -23,7 +24,11 @@ public class Movement : MonoBehaviour
         StartingPoint = new GameObject();
         StartingPoint.transform.position = gameObject.transform.position;
         GameManagerRef = FindObjectOfType<GameManager>();
+        SoundManagerRef = FindObjectOfType<SoundManager>();
         StartCoroutine(Waiter());
+        Speed = Random.Range(5, 100);
+        float RandomScale = Random.Range(1.0f, 10.0f);
+        gameObject.transform.localScale = new Vector3(RandomScale, RandomScale, RandomScale);
     }
 
     // Update is called once per frame
@@ -85,9 +90,18 @@ public class Movement : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Collided = true;
+        if (collision.gameObject.tag == "Planet")
+        {
+            SoundManagerRef.PlaySound("Boom");
+            GameManagerRef.PlanetScore -= 1;
+            Destroy(gameObject);
+        }
         FindObjectOfType<Countdown>().Counting = true;
         FindObjectOfType<Countdown>().GetComponent<Text>().enabled = true;
-        gameObject.GetComponent<SphereCollider>().enabled = false;
+        if (StartingPoint.GetComponent<SphereCollider>())
+        {
+            StartingPoint.GetComponent<SphereCollider>().enabled = false;
+        }
         gameObject.GetComponent<TrailRenderer>().enabled = false;
     }
 }

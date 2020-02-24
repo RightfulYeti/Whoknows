@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3203866798545084209}
   - component: {fileID: 3203866798545084214}
   - component: {fileID: 3203866798545084208}
+  - component: {fileID: 4318126396283456448}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Planet
@@ -111,7 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e4df6d1ab56b141b8bf820ae4a95d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0.5
   StartColor: {r: 0, g: 0, b: 0, a: 1}
   EndColor: {r: 0, g: 0, b: 0, a: 0}
   Repeatable: 1
@@ -244,3 +244,16 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &4318126396283456448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3203866798545084200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2b5d946fa19554eb2a34ec6ef61af3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BufferZone: 1

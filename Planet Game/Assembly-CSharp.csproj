@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Menu\Buttons\ButtonScript.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuController.cs" />
     <Compile Include="Assets\Scripts\Planets\Movement.cs" />
+    <Compile Include="Assets\Wrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Unity.XR.Management">

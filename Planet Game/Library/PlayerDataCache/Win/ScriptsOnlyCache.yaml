@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - MenuController
     - Movement
     - SoundManager
+    - Wrapper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -65,19 +66,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11746}
     - Class: 114
-      Script: {instanceID: 12238}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 12460}
+      Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 12552}
+      Script: {instanceID: 12240}
     - Class: 114
-      Script: {instanceID: 13248}
+      Script: {instanceID: 12462}
     - Class: 114
-      Script: {instanceID: 13380}
+      Script: {instanceID: 12554}
     - Class: 114
-      Script: {instanceID: 13638}
+      Script: {instanceID: 13250}
     - Class: 114
-      Script: {instanceID: 13686}
+      Script: {instanceID: 13382}
+    - Class: 114
+      Script: {instanceID: 13640}
+    - Class: 114
+      Script: {instanceID: 13688}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -87,6 +92,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -128,17 +135,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11990}
     - Class: 114
-      Script: {instanceID: 12238}
+      Script: {instanceID: 12240}
     - Class: 114
-      Script: {instanceID: 12264}
+      Script: {instanceID: 12266}
     - Class: 114
-      Script: {instanceID: 12696}
+      Script: {instanceID: 12698}
     - Class: 114
-      Script: {instanceID: 12874}
+      Script: {instanceID: 12876}
     - Class: 114
-      Script: {instanceID: 13248}
+      Script: {instanceID: 13250}
     - Class: 114
-      Script: {instanceID: 13638}
+      Script: {instanceID: 13640}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -332,6 +339,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 06370805ca7014b86b1e7137563b9df7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Wrapper
+  - hash:
+      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -374,7 +387,7 @@ ScriptsOnlyBuild:
     className: TMP_Asset
   - hash:
       serializedVersion: 2
-      Hash: eab77b734475692c305335eae9a9f133
+      Hash: c60d1df485be2a236ae410b1856ac18d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Countdown
@@ -640,4 +653,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Scenes/Menu.unity
   - Assets/Scenes/Scenes/JeppeScene.unity
-  playerPath: C:/Users/Jeppe/Documents/GitHub/Whoknows/Planet Game/Build/Planet Game.exe
+  playerPath: C:/Users/Jeppe/Desktop/PlanetBuild/Planet Game.exe

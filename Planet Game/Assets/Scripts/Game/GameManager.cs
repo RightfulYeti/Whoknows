@@ -10,11 +10,12 @@ public class GameManager : MonoBehaviour
     public Text PlanetScoreText;
     public bool NewPlanet;
     public int PlanetScore = 0;
+    private Camera Cam;
 
     // Start is called before the first frame update
     void Start()
     {
-        PlanetScoreText = FindObjectOfType<Canvas>().transform.GetChild(1).GetComponent<Text>();
+        Cam = Camera.main;
     }
 
     // Update is called once per frame
@@ -22,7 +23,10 @@ public class GameManager : MonoBehaviour
     {   
         if (NewPlanet)
         {
-            Instantiate(Planet, new Vector3(Random.Range(-100, 100), -50, 50), Planet.transform.rotation);
+            Vector3 ScreenRandomStartPos = new Vector3(Random.Range(0.0f, 1.0f), Random.Range(0, Screen.height), Random.Range(-30, 200));
+            Vector3 WorldRandomStartPos = new Vector3(Cam.ViewportToWorldPoint(ScreenRandomStartPos).x, -50, ScreenRandomStartPos.z);
+            print(WorldRandomStartPos);
+            Instantiate(Planet, WorldRandomStartPos, Planet.transform.rotation);
             PlanetScore++;
             NewPlanet = false;
         }

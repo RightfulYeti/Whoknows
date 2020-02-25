@@ -10,35 +10,55 @@ public class Wrapper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cam = FindObjectOfType<Camera>();
+        Cam = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            if (gameObject.GetComponent<TrailRenderer>().emitting)
+                gameObject.GetComponent<TrailRenderer>().emitting = false;
+            else
+                gameObject.GetComponent<TrailRenderer>().emitting = true;
+        }
     }
 
     void OnBecameInvisible()
     {
-        if (transform.position.x < Cam.ViewportToWorldPoint(new Vector3(0, 0, transform.position.z)).x && (transform.position.z > -20 && transform.position.z < 200))
+        gameObject.GetComponent<TrailRenderer>().emitting = false;
+        if (Cam != null)
         {
-            print("1");
-            transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
+           // print(Cam.WorldToViewportPoint(transform.position));
+            if (Cam.WorldToViewportPoint(transform.position).x < 0)
+            {
+                print("1");
+                transform.forward = transform.forward * -1;
+                //transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
+            }
+            else if (Cam.WorldToViewportPoint(transform.position).x > 1)
+            {
+                print("2");
+                transform.forward = transform.forward * -1;
+                //transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
+            }
+            else if (Cam.WorldToViewportPoint(transform.position).y < 0)
+            {
+                print("3");
+                transform.forward = transform.forward * -1;
+            }
+            else if (Cam.WorldToViewportPoint(transform.position).y > 1)
+            {
+                print("4");
+                transform.forward = transform.forward * -1;
+            }
         }
-        else if (transform.position.x > Cam.ViewportToWorldPoint(new Vector3(1, 0, transform.position.z)).x && (transform.position.z > -20 && transform.position.z < 200))
-        {
-            print("2");
-            transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
-        }
-        else if (transform.position.z < 0)
-        {
-            print("3");
-            transform.position = new Vector3(transform.position.x, transform.position.y, 200);
-        }
-        else if (transform.position.z > 0)
-        {
-            print("4");
-            transform.position = new Vector3(transform.position.x, transform.position.y, -30);
-        }
+    }
+
+    private void OnBecameVisible()
+    {
+        //print("Visible!");
+        gameObject.GetComponent<TrailRenderer>().emitting = true;
     }
 }

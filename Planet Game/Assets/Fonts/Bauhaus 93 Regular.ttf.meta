@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3aa10230eba0267408377e9a6e64211c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Bauhaus 93
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c066fe1c69feaa6428e4ef5783e14367, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

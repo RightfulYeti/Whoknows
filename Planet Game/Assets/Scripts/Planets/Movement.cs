@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour
 {
     public float Speed;
     public float SpeedFactor;
+    public float MinSpeed;
+    public float MaxSpeed;
     private float Timer = 0.0f;
     bool Collided = false;
     private int CurrentTarget;
@@ -26,8 +28,8 @@ public class Movement : MonoBehaviour
         GameManagerRef = FindObjectOfType<GameManager>();
         SoundManagerRef = FindObjectOfType<SoundManager>();
         StartCoroutine(Waiter());
-        Speed = Random.Range(5, 100);
-        float RandomScale = Random.Range(1.0f, 10.0f);
+        Speed = Random.Range(MinSpeed, MaxSpeed);
+        float RandomScale = Random.Range(5.0f, 30.0f);
         gameObject.transform.localScale = new Vector3(RandomScale, RandomScale, RandomScale);
     }
 

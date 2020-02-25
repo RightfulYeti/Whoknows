@@ -145,6 +145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 12.5
   SpeedFactor: 0.02
+  MinSpeed: 25
+  MaxSpeed: 100
   Target: []
 --- !u!96 &3203866798545084208
 TrailRenderer:

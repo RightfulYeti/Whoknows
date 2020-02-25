@@ -274,7 +274,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sounds.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: a1112f475992efb4183b37aa8063bedf, type: 3}
+      objectReference: {fileID: 8300000, guid: 4b6e1b57fc9af9f4c8c594efb3091ee5, type: 3}
     - target: {fileID: 3462563019336938326, guid: 23d2dd57e6294204da989a9dc5a1f444,
         type: 3}
       propertyPath: sounds.Array.data[0].GeneralAudioSettings.output
@@ -284,7 +284,7 @@ PrefabInstance:
     - target: {fileID: 3462563019336938326, guid: 23d2dd57e6294204da989a9dc5a1f444,
         type: 3}
       propertyPath: sounds.Array.data[0].GeneralAudioSettings.volume
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3462563019336938326, guid: 23d2dd57e6294204da989a9dc5a1f444,
         type: 3}

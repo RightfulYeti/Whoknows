@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour
         SoundManagerRef = FindObjectOfType<SoundManager>();
         StartCoroutine(Waiter());
         Speed = Random.Range(MinSpeed, MaxSpeed);
-        float RandomScale = Random.Range(5.0f, 30.0f);
+        float RandomScale = Random.Range(3.5f, 15.0f);
         gameObject.transform.localScale = new Vector3(RandomScale, RandomScale, RandomScale);
     }
 

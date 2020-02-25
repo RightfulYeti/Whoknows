@@ -129,8 +129,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11568}
     - Class: 114
-      Script: {instanceID: 11746}
-    - Class: 114
       Script: {instanceID: 11790}
     - Class: 114
       Script: {instanceID: 11990}
@@ -147,8 +145,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13640}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -405,7 +401,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: f8386e96f02bb3793901f6ba39a1bbac
+      Hash: d79f640540c444812d0c7ff5df0ad2af
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Movement

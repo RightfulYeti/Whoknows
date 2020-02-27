@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3203866798545084212}
   - component: {fileID: 3203866798545084213}
   - component: {fileID: 3203866798545084202}
-  - component: {fileID: 3203866798545084203}
   - component: {fileID: 3203866798545084209}
   - component: {fileID: 3203866798545084214}
   - component: {fileID: 3203866798545084208}
@@ -65,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6478536213147159724, guid: 73cad126d07091b40bd0ebaf6406cb46, type: 3}
+  - {fileID: 2100000, guid: 1b489de17a9fa304cb5bf60ded8dff71, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100,21 +99,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3203866798545084203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3203866798545084200}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93e4df6d1ab56b141b8bf820ae4a95d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StartColor: {r: 0, g: 0, b: 0, a: 1}
-  EndColor: {r: 0, g: 0, b: 0, a: 0}
-  Repeatable: 1
 --- !u!54 &3203866798545084209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -149,8 +133,8 @@ MonoBehaviour:
   MaxSpeed: 100
   Target: []
   GameOver: 0
-  RandomScaleMin: 10
-  RandomScaleMax: 50
+  RandomScaleMin: 20
+  RandomScaleMax: 75
 --- !u!96 &3203866798545084208
 TrailRenderer:
   serializedVersion: 2

@@ -44,25 +44,30 @@ public class Wrapper : MonoBehaviour
     {
         //VisibilitySwap = 1;
         print("Invisible!");
-        PlanetTrailRenderer.emitting = false;
+        //PlanetTrailRenderer.enabled = false;
+       PlanetTrailRenderer.emitting = false;
         if (Cam)
         {
             // Screen left bounds
             if (Cam.WorldToViewportPoint(transform.position).x < 0)
             {
+                //transform.position = new Vector3(transform.position.x * Screen.Width, transform.position.y, transform.position.z);
                 print("1");
-                transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
+                transform.forward = transform.forward * -1;
+                //transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
             }
             // Screen right bounds
             else if (Cam.WorldToViewportPoint(transform.position).x > 1)
             {
                 print("2");
-                transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
+                transform.forward = transform.forward * -1;
+                //transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
             }
             // Screen bottom bounds
             else if (Cam.WorldToViewportPoint(transform.position).y < 0)
             {
                 print("3");
+                transform.forward = transform.forward * -1;
             }
             // Screen top bounds
             else if (Cam.WorldToViewportPoint(transform.position).y > 1)
@@ -70,7 +75,7 @@ public class Wrapper : MonoBehaviour
                 print("4");
             }
             // This code is for ricochet effect / bouncing off the screen sides
-            //transform.forward = transform.forward * -1;
+            transform.forward = transform.forward * -1;
         }
     }
 
@@ -78,6 +83,7 @@ public class Wrapper : MonoBehaviour
     {
         VisibilitySwap = 0;
         print("Visible!");
-        PlanetTrailRenderer.emitting = true;
+        //PlanetTrailRenderer.enabled = true;
+        //PlanetTrailRenderer.emitting = true;
     }
 }

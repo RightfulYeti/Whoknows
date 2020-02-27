@@ -84,6 +84,6 @@ public class Wrapper : MonoBehaviour
         VisibilitySwap = 0;
         print("Visible!");
         //PlanetTrailRenderer.enabled = true;
-        //PlanetTrailRenderer.emitting = true;
+        PlanetTrailRenderer.emitting = true;
     }
 }

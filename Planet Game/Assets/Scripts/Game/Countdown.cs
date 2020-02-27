@@ -9,7 +9,7 @@ public class Countdown : MonoBehaviour
     public float CDTimer;
     private GameManager GameManagerRef;
     public bool Counting = true;
-    private int CurrentActiveUISprite;
+    public int CurrentActiveUISprite;
     public Image Image1;
     public Image Image2;
     public Image Image3;
@@ -33,7 +33,6 @@ public class Countdown : MonoBehaviour
             if (Counting)
                 CDTimer -= Time.deltaTime;
             int DisplayTimer = (int)CDTimer + 1;
-            //gameObject.GetComponent<Text>().text = DisplayTimer.ToString();
             CurrentActiveUISprite = DisplayTimer;
         }
         else if (CDTimer <= 0.0f)

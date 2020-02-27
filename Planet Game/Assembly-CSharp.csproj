@@ -64,40 +64,40 @@
      <Compile Include="Assets\Scripts\Planets\Movement.cs" />
      <Compile Include="Assets\Wrapper.cs" />
  <Reference Include="Unity.XR.Management">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Subsystem.Registration">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.Management.Editor">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Hej/Documents/GitHub/Whoknows/Planet Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Jeppe/Desktop/Argelite/Ny/Planets/Whoknows/Planet Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.0a20/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
